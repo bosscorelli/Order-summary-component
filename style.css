@@ -1,0 +1,133 @@
+/*  */
+/* Reset */
+/*  */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+
+
+body {
+    min-height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--Pale-blue);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    max-width: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card>.image>img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.card>:not(.image) {
+    padding-inline: 45px;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+}
+
+.description {
+    text-align: center;
+    opacity: 0.5;
+    font-weight: 500;
+
+}
+
+.plan {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--Very-pale-blue);
+
+}
+
+.plan-left {
+    gap: 1rem;
+    background-color: var(--Very-pale-blue);
+}
+
+
+
+.plan-right {
+    background-color: var(--Very-pale-blue);
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
