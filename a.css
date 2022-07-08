@@ -91,23 +91,20 @@ body {
     margin-bottom: 2rem;
 }
 
-.text {
+.card:not(.image) {
     padding-inline: 45px;
+    margin-bottom: 1rem;
 }
-
-
 
 h1 {
     text-align: center;
     font-weight: 900;
-    margin-bottom: 1rem;
 }
 
 .description {
     text-align: center;
     opacity: 0.5;
     font-weight: 500;
-    margin-bottom: 1rem;
 
 }
 
@@ -116,62 +113,23 @@ h1 {
     flex-direction: row;
     background-color: var(--Very-pale-blue);
     padding: 20px;
+    margin-inline: 45px;
     border-radius: 10px;
-    margin-bottom: 2rem;
 
 }
 
-.plan img {
-    margin-right: 25px;
-}
-
-.plan button {
-    margin-left: auto;
-    border: none;
+.plan-left {
     background-color: var(--Very-pale-blue);
-    color: var(--Bright-blue);
-    text-decoration: underline;
-    cursor: pointer;
 }
 
-.price :first-child {
-    font-weight: 700;
+
+
+.plan-right {
+    background-color: var(--Very-pale-blue);
+
 }
 
 .buttons {
     display: flex;
     flex-direction: column;
-    cursor: pointer;
-}
-
-.buttons :first-child {
-    background-color: var(--Bright-blue);
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    color: #fff;
-    cursor: pointer;
-    -webkit-box-shadow: 0px 14px 14px 0px rgba(38, 29, 222, 0.13);
-    -moz-box-shadow: 0px 14px 14px 0px rgba(38, 29, 222, 0.13);
-    box-shadow: 0px 14px 14px 0px rgba(38, 29, 222, 0.13);
-}
-
-.buttons :first-child:active {
-    opacity: 0.5;
-}
-
-.buttons :last-child {
-    border: none;
-    background-color: #fff;
-    opacity: 0.5;
-    padding: 10px;
-    margin-bottom: 1rem;
-    cursor: pointer;
-}
-
-
-@media (max-width:475px) {
-    .card {
-        margin: 20px;
-    }
 }
