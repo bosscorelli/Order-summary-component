@@ -112,20 +112,15 @@ h1 {
     display: flex;
     flex-direction: row;
     background-color: var(--Very-pale-blue);
+    padding: 20px;
+    border-radius: 10px;
 
 }
 
-.plan-left {
-    gap: 1rem;
-    background-color: var(--Very-pale-blue);
-}
 
 
 
-.plan-right {
-    background-color: var(--Very-pale-blue);
 
-}
 
 .buttons {
     display: flex;
